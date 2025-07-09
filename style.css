@@ -1,3 +1,10 @@
+:root {
+  --global-background-color: #F8E6BE;
+  --global-secondary-background-color: #D8C8A5;
+  --global-focus-color: #B17D18;
+  --global-diamond-icon-color: #C1A54B;
+}
+
 html,body {
 	  background-color: white;
 	  color: black;
@@ -17,7 +24,7 @@ nav{
 	height:auto;
 	min-height:42px;
 	width:100%;
-	background-color: white;
+	background-color: var(--global-background-color);
 	display: flex;
 	flex-direction:column;
 	flex-wrap:nowrap;
@@ -35,7 +42,7 @@ nav{
   }
   
   nav a:hover, a:active{
-	  color: #FF4D00;
+	  color: var(--global-focus-color);
 	  text-decoration:none;
   }
 
@@ -609,7 +616,7 @@ footer{
 	position:fixed;
 	height:70px;
 	width:100%;
-	background-color: white;
+	background-color: var(--global-background-color);
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -619,37 +626,55 @@ footer{
   }
   
   nav a{
-	  text-decoration:none;
-	  font-family: Montserrat;
-	  color: #5EB1D4;
-	  font-size:16px;
+	  font-family: Work Sans;
+	  color: black;
+	  font-size: 20px;
   }
   
   nav a:hover, a:active{
-	  color: #FF4D00;
-	  text-decoration:none;
+	  color: var(--global-focus-color);
+	  text-decoration: none;
   }
   
   .nav_content{
-	  margin:auto;
-	  padding:0;
+	  padding: 0 0 0 100px;
 	  width:600px;
-	  heigth:100%;
-        display: flex;
-		flex-wrap:nowrap;
-        flex-direction: row;
-        justify-content: center;
-		align-items:center;
+	  display: flex;
+	  flex-wrap:nowrap;
+	  flex-direction: row;
+	  justify-content: flex-start;
+	  align-items:center;
 	  list-style-type: none;
 	  visibility: visible
   }
   
   nav li{
-	  margin:auto;
+	  margin:auto 50px auto 0;
+	  &.separator{
+			margin: auto 10px auto 0;
+			background-color: var(--global-diamond-icon-color); 
+			width:10px; 
+			height:10px; 
+			display: block;
+			rotate: 45deg;
+		}
   }
-  
-  .separator{
-	  background-color: #FF4D00; width:10px; height:10px; display: block;
+
+  nav button {
+	    font-family: Work Sans;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: 100px;
+        height: 30px;
+        width: 120px;
+        background-color: var(--global-focus-color);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
   }
   
   .nav_toggle {
@@ -667,38 +692,73 @@ footer{
 	  width:100%;
 	  height:auto;
 	  min-height:100%; 
-	  flex-direction: column;
+	  flex-direction: row;
 	  justify-content: center; 
 	  align-items: center;
 	  flex-wrap: nowrap;
-	  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(./img/cover/cover_2000.png); 
+	  background-image: linear-gradient(rgba(216,200,165,0.8), rgba(216,200,165,0.8)), url(./img/cover/cover_2000.png); 
 	  background-size:cover; 
 	  background-repeat: no-repeat; 
-	  background-position: center center; 
+	  background-position: top; 
+	  background-attachment: fixed;
+  }
+
+  .logo_cover_container {
+      display: flex;
+        width: auto;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+  }
+
+  .text_cover_container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        box-sizing: border-box;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
   }
   
   .logo_cover{
 	  margin: 0 0 0 0;
-	  width: 400px;
-	  height: 400px;
+	  width: 1016px;
+	  height: 991px;
   }
   
   .subtitle_cover{
-	  font-size: 28px;
-	  font-weight: 200;
-	  color:white;
-	  font-family: Montserrat;
-	  margin: 0 0 30px 0;
-	  padding:0;
+	font-size: 48px;
+    font-weight: normal;
+    color: gray;
+    font-family: Work Sans;
+    margin: 0;
+    padding: 0;
+    text-align: start;
   }
   
   .message_cover{
-	  font-size: 28px;
-	  font-weight: 200;
-	  color:white;
-	  font-family: Montserrat;
-	  margin: 80px 0 0 0;
-	  padding:0;
+	font-size: 64px;
+    font-weight: medium;
+    color: black;
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+  }
+
+  .section_portfolio{
+		padding: 0;
+		background-color: var(--global-secondary-background-color);
+		height:auto;
+		min-height:100%; 
+		width: auto;
+		display: flex; 
+		justify-content: center; 
+		align-items: center;
+		text-align:center;
+		flex-direction: column;
+		flex-wrap: nowrap;
   }
   
   .section_with_description{
@@ -855,7 +915,7 @@ footer{
 	  width:48px; height:48px; margin: 10px;
   }
   
-  .social_networks_icons > p > a, a:link, a:hover, a:visited, a:active{
+  .social_networks_icons > p > a, social_networks_icons > p > a:link, social_networks_icons > p > a:hover, social_networks_icons > p > a:visited, social_networks_icons > p > a:active{
 	text-decoration: none;
 	font-family:Montserrat;
 	color: #5EB1D4;
@@ -995,8 +1055,8 @@ footer{
 }
 
 .group_cards{
-	width:100%;
-	padding-bottom: 10%; 
+	width:80%;
+	padding: 10% 0; 
 	display:flex; 
 	flex-wrap: wrap; 
 	flex-direction: row; 
@@ -1011,37 +1071,42 @@ footer{
 	text-align:center;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	font-family:Montserrat;
-	font-size: 18px;
-	color: #5EB1D4;
-	border-width:1px;
-	border-style:solid; 
-	border-radius: 5px; 
-	border-color: #5EB1D4;
-	padding:10px;
+	border-radius: 30px; 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+	padding:30px;
 	margin: 1%;
-	background-color: white;
-	width:330px;
-	height:330px;
+	background-color: var(--global-background-color);
+	width: 200px;
+    height: 300px;
+	border: none;
 }
 
 .card_layout_title{
-	font-family: Merriweather;
-	font-size:20px;
+	font-family: 'Inter';
+	font-weight: medium;
+	font-size:24px;
 	margin: 10px;
 	width:100%;
 	text-overflow: ellipsis;
+	color: black;
 }
 
 .card_layout_thumbnail{
-	margin: 10px;
-	height: 120px;
+	font-size: 80px;
+  	width: 80px;
+  	height: 80px;
+  	line-height: 80px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	color: var(--global-focus-color)
 }
 
 .card_layout_body{
-	font-family:Montserrat;
+	font-family:'Work Sans';
 	font-size: 16px;
-	margin: 10px;
+	margin-top: 10px;
+	color: #42413D;
 }
 
 .card_layout_positive_button{

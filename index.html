@@ -4,8 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="./img/brand.png"/>
   <link rel="stylesheet" href="./style.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -19,29 +20,67 @@
 </svg>
 </div>
 	<ul id="nav_content" class="nav_content">
+	  <li class="separator"></li>
 	  <li>
-		<a href="./index.html#"><img src="./img/brand.png" width="45" height="39" alt="Branding Online"></a>
+		<a href="./index.html#section_sobre_cover">Portfolio</a>
 	  </li>
 	  <li class="separator"></li>
 	  <li>
-		<a href="./index.html#section_sobre_cover">Sobre</a>
-	  </li>
-	  <li style="display:none" class="separator"></li>
-	  <li style="display:none">
-		<a href="./index.html#section_cases_cover">Cases</a>
-	  </li>
-	  <li class="separator"></li>
-	  <li>
-		<a href="./index.html#section_contact_cover">Contatos</a>
+		<a href="./index.html#section_contact_cover">Sobre</a>
 	  </li>
 	</ul>
+	<button>Contatos</button>
 </nav>
 
 <section id="section_cover" class="section_introduction_cover">
-	<p class="message_cover"><span style="background-color: #5EB1D4;">"Deus é bom o tempo todo! O tempo todo Deus é bom!"</span></p>
-	<img class="logo_cover" src="./img/logo.png" />
-	<p class="subtitle_cover"><span style="background-color: #5EB1D4;">Agência de Comunicação</span></p>
+	<div class="logo_cover_container"><img class="logo_cover" src="./img/logo.png" /></div>
+	<div class="text_cover_container">
+		<p class="message_cover">Conectamos marcas ao futuro digital</p>
+		<p class="subtitle_cover">Conheça-nos</p>
+	</div>
+	
 </section>
+
+
+<section id="section_portfolio" class="section_portfolio" >
+		<div class="group_cards">
+			<div class="card_layout">
+						<i class="card_layout_thumbnail fa-solid fa-globe"></i>
+						<p class="card_layout_title">Redes sociais</p>
+						<p class="card_layout_body">Por que a sua empresa precisa de uma página nas redes sociais? “Quem não é visto, não é lembrado?!” </p>
+			</div>
+			
+			<div class="card_layout">  
+				<i class="card_layout_thumbnail fa-solid fa-bullhorn"></i>
+				<p class="card_layout_title">Marketing</p>
+				<p class="card_layout_body">Criar, transformar, contribuir com a evolução de uma empresa é impactante!</p>
+			</div>
+			
+			<div class="card_layout">  
+				<i class="card_layout_thumbnail fa-solid fa-newspaper"></i>
+				<p class="card_layout_title">Assessoria de imprensa</p>
+				<p class="card_layout_body">Somos especializados em jornalismo, criar textos para agregar nas informações da comunidade.</p>
+			</div>
+			
+			<div class="card_layout">  
+				<i class="card_layout_thumbnail fa-solid fa-thumbs-up"></i>
+				<p class="card_layout_title">Impulsionamentos</p>
+				<p class="card_layout_body">Seguimos a logística de entender o algoritmo que vamos trabalhar, bem como o nicho do cliente.</p>
+			</div>
+			
+			<div class="card_layout">  
+				<i class="card_layout_thumbnail fa-solid fa-copyright"></i>
+				<p class="card_layout_title">Comunicação Visual</p>
+				<p class="card_layout_body">Construímos sua identidade visual completa, criamos e padronizamos sua marca.</p>
+			</div>
+			
+			<div class="card_layout">  
+				<i class="card_layout_thumbnail fa-solid fa-person-chalkboard"></i>
+				<p class="card_layout_title">Mídia Training</p>
+				<p class="card_layout_body">Desenvolvemos a habilidade das pessoas ao falar em vídeos e também com seus clientes de maneira clara.</p>
+			</div>
+		</div>
+	</section>
 
 
 <section class="section_with_description" id="section_introduction">
@@ -58,54 +97,7 @@
   
   
   <!-- Ferramentas -->
-  <section id="section_ferramentas" class="section_with_description" >
-        <p class="section_description">Branding Connected é uma agência especializada em conectar Marcas ao mundo online. 
-A conexão entre pessoas e marcas cresce a cada instante e seu posicionamento precisa ser certeiro ao falar com o público. 
-Padronizar um conceito é importante para que a marca/persona seja compreendida em sua comunicação.</p>
-		<div class="group_cards">
-			<div class="card_layout">
-						<img class="card_layout_thumbnail" alt="Redes Sociais" src="./img/icons/network.svg"/>
-						<p class="card_layout_title">Com as redes sociais</p>
-						<p class="card_layout_body">Por que a sua empresa precisa de uma página nas redes sociais? “Quem não é visto, não é lembrado?!” </p>
-						<button type="button" class="card_layout_positive_button" name="network">Ler mais</button>	
-			</div>
-			
-			<div class="card_layout">  
-				<img class="card_layout_thumbnail" alt="Marketing" src="./img/icons/marketing.svg"/>
-				<p class="card_layout_title">Com o Marketing</p>
-				<p class="card_layout_body">Criar, transformar, contribuir com a evolução de uma empresa é impactante!</p>
-				<button type="button" class="card_layout_positive_button" name="marketing">Ler mais</button> 
-			</div>
-			
-			<div class="card_layout">  
-				<img class="card_layout_thumbnail" alt="Assessoria de Imprensa" src="./img/icons/press.svg"/>
-				<p class="card_layout_title">Com Assessoria de imprensa</p>
-				<p class="card_layout_body">A Branding é especializada em jornalismo, criar textos para agregar nas informações da comunidade.</p>
-				<button type="button" class="card_layout_positive_button" name="press">Ler mais</button> 
-			</div>
-			
-			<div class="card_layout">  
-				<img class="card_layout_thumbnail" alt="Impulsionamento" src="./img/icons/boost.svg"/>
-				<p class="card_layout_title">Com Impulsionamentos</p>
-				<p class="card_layout_body">Seguimos a logística de entender o algoritmo que vamos trabalhar, bem como o nicho do cliente.</p>
-				<button type="button" class="card_layout_positive_button" name="boost">Ler mais</button> 
-			</div>
-			
-			<div class="card_layout">  
-				<img class="card_layout_thumbnail" alt="Comunicação Visual" src="./img/icons/visual.svg"/>
-				<p class="card_layout_title">Com Comunicação Visual</p>
-				<p class="card_layout_body">Construímos sua identidade visual completa, criamos e padronizamos sua marca.</p>
-				<button type="button" class="card_layout_positive_button" name="visual">Ler mais</button> 
-			</div>
-			
-			<div class="card_layout">  
-				<img class="card_layout_thumbnail" alt="Mídia Training" src="./img/icons/training.svg"/>
-				<p class="card_layout_title">Com Mídia Training</p>
-				<p class="card_layout_body">Desenvolvemos a habilidade das pessoas ao falar em vídeos e também com seus clientes de maneira clara.</p>
-				<button type="button" class="card_layout_positive_button" name="training">Ler mais</button> 
-			</div>
-		</div>
-	</section>
+  
 	
 	<!-- The Modal -->
 <div id="myModal" class="modal">
@@ -122,142 +114,6 @@ Padronizar um conceito é importante para que a marca/persona seja compreendida 
   <section style="display:none" id="section_cases_cover" class="section_cover">
     <p class="title_cover">Cases</p>
   </section>
-
-
-<!-- Cases -->
-  <section style="display:none" id="section_cases" class="section_with_description">
-		
-		<div class="group_cases" style="margin-top:10%">
-			<div class="case">
-			  <img src="./img/cases/jgn.png" width="180px" height="180px" alt="JGN">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/camila.png" width="250px" height="121px" alt="Dra. Camila B. Beteli">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/patricia.png" width="250px" height="150px" alt="Patrícia Cotrim">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/mestriner.png" width="250px" height="112px" alt="Dra. Isabella Mestriner">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/valesca.png" width="250px" height="70px" alt="Dra. Valesca Bis">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/chef.png" width="250px" height="133px" alt="Delicias Du Chef">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/daniela.png" width="250px" height="139px" alt="Dra. Daniela Fontes">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/sag.png" width="250px" height="82px" alt="Dr. Sthefano Atique Gabriel">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/casa.png" width="250px" height="90px" alt="CasaH">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/edson.png" width="250px" height="180px" alt="Dr. Edson Dias Filho">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/estaciona.png" width="244px" height="68px" alt="Aqui Estacionamento">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/flor.png" width="250px" height="100px" alt="Flor de Lis">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/panix.png" width="250px" height="134px" alt="Panix">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/goomega.png" width="250px" height="45px" alt="Go Omega">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/omega.png" width="250px" height="47px" alt="Omega S/A">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/junior.png" width="250px" height="180px" alt="Junior Ferrari">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/decasa.png" width="250px" height="63px" alt="Mais De Casa">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/triade.jpg" width="180px" height="180px" alt="Tríade do Autoconhecimento">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/durval.png" width="250px" height="193px" alt="Durval Penápolis">
-			</div>
-			
-			<div class="case">
-			  <img src="./img/cases/otica.png" width="182px" height="180px" alt="Ótica Paula Matheus">
-			</div>
-			
-			<div class="case">
-			  <img src="./img/cases/valeria.png" width="250px" height="132px" alt="Valéria Maia">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/malagutti.png" width="250px" height="61px" alt="Isabela Malagutti">
-			</div>
-			
-			<div class="case">
-			  <img src="./img/cases/eleela.png" width="250px" height="180px" alt="Ele e Ela Restaurante e Pizzaria">
-			</div>
-			
-			<div class="case">
-			  <img src="./img/cases/mestreBEER.png" width="158px" height="180px" alt="Mestre BEER">
-			</div>
-			
-			<div class="case">
-			  <img src="./img/cases/escola.png" width="158px" height="180px" alt="Escola Marketplace">
-			</div>
-			
-			<div class="case">
-			  <img src="./img/cases/styllus.png" width="250px" height="145px" alt="Styllus">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/cahmaia.png" width="227px" height="180px" alt="Cahmaia Store">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/jumpire.png" width="250px" height="139px" alt="Daniela da Silva Jumpire">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/femme.png" width="250px" height="92px" alt="La Femme">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/isabella.png" width="250px" height="180px" alt="Dra. Isabella O. Greggio">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/doce.png" width="248px" height="180px" alt="Doce Tempero">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/jucelia.png" width="250px" height="158px" alt="Jucelia Bonfochi">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/lilian.png" width="250px" height="87px" alt="Lilian Eiko">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/studio.png" width="250px" height="128px" alt="Studio Vis">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/unique.png" width="213px" height="180px" alt="Unique Baby">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/valencia.png" width="250px" height="80px" alt="Lu Valencia">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/ayoub.png" width="250px" height="104px" alt="Cardiologia e Nutrição - Ayoub">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/curso.png" width="250px" height="137px" alt="Curso Sedação Consciente com Óxido Nitroso">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/rv.png" width="250px" height="171px" alt="Rosangela Vargas">
-			</div>
-			<div class="case">
-			  <img src="./img/cases/hub.png" width="170px" height="95px" alt="HUB">
-			</div>
-
-		</div>
-		
-	</section>
 
  <!-- Contact cover section -->  
   <section id="section_contact_cover" class="section_cover">
