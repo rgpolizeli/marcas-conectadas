@@ -730,7 +730,7 @@ footer{
   .subtitle_cover{
 	font-size: 48px;
     font-weight: normal;
-    color: gray;
+    color: #42413D;
     font-family: Work Sans;
     margin: 0;
     padding: 0;
@@ -741,7 +741,7 @@ footer{
 	font-size: 64px;
     font-weight: medium;
     color: black;
-    font-family: Inter;
+    font-family: 'Inter';
     margin: 0;
     padding: 0;
     text-align: start;
@@ -760,7 +760,84 @@ footer{
 		flex-direction: column;
 		flex-wrap: nowrap;
   }
+
+  .section_about {
+	  width:100%;
+	  height:100%;
+	  background-image: linear-gradient(rgba(216,200,165,0.8), rgba(216,200,165,0.8)), url(./img/cover/cover_2000.png); 
+	  background-size:cover; 
+	  background-repeat: no-repeat; 
+	  background-position: top; 
+	  background-attachment: fixed;
+		
+  }
+
+	.about_title {
+		padding: 80px 0 0 100px;
+    height: auto;
+    color: black;
+    font-family: 'Inter';
+		font-size: 64px;
+	}
+
+	.about_separator {
+		margin: 20px 0 80px 100px;
+		width: 150px;
+		height: 12px;
+		background-color: var(--global-focus-color);
+		border-radius: 2px;
+
+	}
   
+	.about_description {
+		    height: 25%;
+        margin: 0 250px 0 100px;
+        color: #42413D;
+        font-family: 'Work Sans';
+        font-size: 30px;
+        text-align: left;
+	}
+
+	.about_icon_section {
+		        height: 40%;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-evenly;
+		
+	}
+
+	.about_icon_group{
+		        display: flex;
+        height: 250px;
+        width: 250px;
+        background-color: var(--global-background-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+				border-radius: 50px;
+				box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+	}
+
+	.about_icon_group .icon{
+		fill:#B17D18;
+		margin: 30px 0 15px 0;
+	}
+
+	.about_icon_group .about_icon_group_title{
+		color: black;
+    font-family: 'Inter';
+		font-size: 52px;
+	}
+
+	.about_icon_group .about_icon_group_subtitle{
+		 color: #42413D;
+    font-family: 'Work Sans';
+		font-size: 20px;
+		text-align: center;
+	}
+
   .section_with_description{
 		margin-left: 8%;
 		margin-right: 8%;
