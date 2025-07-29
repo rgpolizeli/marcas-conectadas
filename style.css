@@ -112,6 +112,15 @@
 		align-items: center;
 	}
 
+	nav button:hover,
+	nav button:focus,
+	nav button:active {
+	color: white;
+	background-color: var(--global-diamond-icon-color);
+	border: none;
+	outline: none;
+}
+
 	.nav_toggle {
 		display: none;
 	}
@@ -267,22 +276,28 @@
 	min-height: 100%;
 	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	padding: 0;
 }
 
 .group_contact {
 	margin: 10% 5% 10% 5%;
-	padding: 50px;
+	padding: 5%;
 	display: flex;
 	justify-content: start;
 	align-items: start;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	background-color: var(--global-background-color);
 	border-radius: 30px;
 	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+	min-width: 360px;
+    min-height: 400px;
+	width:10%;
+	height: 20%;
 
 }
 
@@ -293,6 +308,14 @@
 	flex-direction: column;
 	flex-wrap: nowrap;
 	width: 360px;
+}
+
+.social_networks_icons a,
+.social_networks_icons:hover,
+.social_networks_icons:focus,
+.social_networks_icons:active {
+	text-decoration: none;
+	box-shadow: none;
 }
 
 .social_networks_icons_container {
@@ -471,19 +494,20 @@ footer {
 
 .card_layout {
 	display: flex;
-	align-items: center;
-	align-content: flex-start;
-	text-align: center;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	border-radius: 30px;
-	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-	padding: 30px;
-	margin: 1%;
-	background-color: var(--global-background-color);
-	width: 200px;
-	height: 300px;
-	border: none;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    padding: 3%;
+    margin: 1%;
+    background-color: var(--global-background-color);
+	width: 5%;
+	height: 10%;
+    min-width: 200px;
+    min-height: 300px;
+    border: none;
 }
 
 .card_layout_title {
@@ -498,12 +522,11 @@ footer {
 
 .card_layout_thumbnail {
 	font-size: 80px;
-	width: 80px;
-	height: 80px;
+	width: 10%;
+	height: 10%;
+	min-width: 80px;
+	min-height: 80px;
 	line-height: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	color: var(--global-focus-color)
 }
 
@@ -536,92 +559,4 @@ footer {
 	color: white;
 	border: none;
 	outline: none;
-}
-
-/* The Modal (background) */
-.modal {
-	display: none;
-	/* Hidden by default */
-	position: fixed;
-	/* Stay in place */
-	z-index: 1;
-	/* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%;
-	/* Full width */
-	height: 100%;
-	/* Full height */
-	overflow: auto;
-	/* Enable scroll if needed */
-	background-color: rgb(0, 0, 0);
-	/* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4);
-	/* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-	background-color: #fefefe;
-	margin: 2% auto;
-	/* 15% from the top and centered */
-	padding: 20px;
-	border: 1px solid #888;
-	width: 50%;
-	/* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-	color: #aaa;
-	float: right;
-	font-size: 48px;
-	margin: 0 3% 0 0;
-}
-
-.close:hover,
-.close:focus {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-
-.myModalContentDiv {
-	display: flex;
-	display: flex;
-	align-items: flex-start;
-	align-content: flex-start;
-	text-align: left;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	margin: 2% 5% 5% 5%;
-}
-
-.myModalContentDiv p {
-	font-family: Montserrat;
-	font-size: 16px;
-	color: #5EB1D4;
-	margin: 1em 0 1em 0;
-}
-
-.myModalContentDiv h1 {
-	font-family: Merriweather;
-	font-size: 20px;
-	color: #5EB1D4;
-}
-
-.myModalContentDiv ul {
-	font-family: Montserrat;
-	font-size: 16px;
-	list-style-type: none;
-	padding: 0;
-	margin: 1em 0 1em 0;
-	color: #5EB1D4;
-}
-
-.myModalContentDiv li {
-	margin: 1em 0 1em 1em;
-}
-
 }
