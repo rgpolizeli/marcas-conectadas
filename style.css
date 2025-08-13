@@ -119,6 +119,8 @@
 	background-color: var(--global-diamond-icon-color);
 	border: none;
 	outline: none;
+	transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(193, 155, 75, 0.5);
 }
 
 	.nav_toggle {
