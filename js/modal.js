@@ -17,7 +17,8 @@ export default function configModal(){
 	
 	for(var i=0; i<btns.length; i++){
 		btns[i].onclick = async function(event) {
-		  let content = await load(event.currentTarget.name + ".txt")
+		  let name = event.currentTarget.getAttribute('name')
+		  let content = await load(name + ".txt")
 		  modalContentDiv.innerHTML = content
 		  modal.style.display = "block"
 		  document.body.style.overflow="hidden"

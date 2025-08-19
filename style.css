@@ -54,6 +54,7 @@
 		align-items: center;
 		flex-wrap: nowrap;
 		box-shadow: 0 8px 6px -6px #999;
+		z-index: 99999;
 	}
 
 	nav a {
@@ -110,6 +111,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
 	}
 
 	nav button:hover,
@@ -392,6 +394,7 @@ button[type=submit] {
 	font-size: 20px;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 button[type=submit]:hover,
@@ -401,6 +404,8 @@ button[type=submit]:active {
 	background-color: var(--global-diamond-icon-color);
 	border: none;
 	outline: none;
+	transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(193, 155, 75, 0.5);
 }
 
 textarea {
@@ -510,6 +515,12 @@ footer {
     min-width: 200px;
     min-height: 300px;
     border: none;
+	cursor: pointer;
+}
+
+.card_layout:hover {
+	transform: scale(1.08);
+    box-shadow: 0 0 10px rgba(193, 155, 75, 0.5);
 }
 
 .card_layout_title {
@@ -539,26 +550,80 @@ footer {
 	color: #42413D;
 }
 
-.card_layout_positive_button {
-	font-family: Montserrat;
-	font-size: 14px;
-	margin: 10px;
-	padding: 5px 10px 5px 10px;
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 5px;
-	border-color: #FF4D00;
-	height: 40px;
-	width: 90px;
-	background-color: white;
-	color: #FF4D00;
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999999999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.card_layout_positive_button:hover,
-.card_layout_positive_button:focus,
-.card_layout_positive_button:active {
-	background-color: #FF4D00;
-	color: white;
-	border: none;
-	outline: none;
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--global-background-color);
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 48px;
+  margin: 0 3% 0 0;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.myModalContentDiv{
+	display:flex;
+	display: flex; 
+	align-items: flex-start;
+	align-content: flex-start;
+	text-align:left;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin: 2% 5% 5% 5%;
+}
+
+.myModalContentDiv p{
+	font-family:Montserrat;
+	font-size: 16px;
+	color: black;
+	margin: 1em 0 1em 0;
+}
+
+.myModalContentDiv h1{
+	font-family: Merriweather;
+	font-size:20px;
+	color: black;
+}
+
+.myModalContentDiv ul{
+	font-family:Montserrat;
+	font-size: 16px;
+	list-style-type: none;
+	padding:0;
+	margin: 1em 0 1em 0;
+	color: #5EB1D4;
+}
+
+.myModalContentDiv li{
+	margin: 1em 0 1em 1em;
 }
