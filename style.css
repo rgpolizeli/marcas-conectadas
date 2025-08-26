@@ -274,6 +274,40 @@
 	text-align: center;
 }
 
+.section_press {
+	padding: 15vh 0 20vh 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--global-secondary-background-color);
+}
+
+.press_video {
+	margin-bottom: 8vh;
+}
+
+.press_options {
+	display: flex;
+    flex-direction: row;
+	gap: 30px;
+}
+
+.press_option {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 160px;
+    background-color: var(--global-background-color);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+	cursor: pointer;
+}
+
+.press_option:hover, .press_option_active {
+	transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(193, 155, 75, 0.5);
+}
+
 .section_contacts {
 	background-color: var(--global-secondary-background-color);
 	height: auto;
@@ -573,6 +607,7 @@ footer {
   padding: 20px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 30px;
 }
 
 /* The Close Button */
@@ -603,25 +638,25 @@ footer {
 }
 
 .myModalContentDiv p{
-	font-family:Montserrat;
+	font-family:'Work Sans';
 	font-size: 16px;
 	color: black;
 	margin: 1em 0 1em 0;
 }
 
 .myModalContentDiv h1{
-	font-family: Merriweather;
-	font-size:20px;
+	font-family: 'Inter';
+	font-size: 20px;
 	color: black;
 }
 
 .myModalContentDiv ul{
-	font-family:Montserrat;
+	font-family:'Work Sans';
 	font-size: 16px;
 	list-style-type: none;
 	padding:0;
 	margin: 1em 0 1em 0;
-	color: #5EB1D4;
+	color: black;
 }
 
 .myModalContentDiv li{
