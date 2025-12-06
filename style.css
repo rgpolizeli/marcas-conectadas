@@ -87,7 +87,8 @@
 	.about_title {
 		color: black;
 		font-family: 'Inter';
-		font-size: 44px;
+		font-size: 36px;
+		text-align: center;
 	}
 
 	.about_separator {
@@ -225,7 +226,282 @@
 		color: #42413D;
 	}
 
+	.section_press {
+		padding: 15vh 0 20vh 0;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		background-color: var(--global-secondary-background-color);
+	}
 
+	.press_video {
+		margin-bottom: 8vh;
+	}
+
+	.press_video_viewer {
+		width: 90vw;
+		height: 30vh;	
+	}
+
+	.press_options {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.press_option {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 80px;
+		width: 80px;
+		background-color: var(--global-background-color);
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+		cursor: pointer;
+	}
+
+	.press_option_img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.press_option:hover,
+	.press_option_active {
+		transform: scale(1.1);
+		box-shadow: 0 0 10px rgba(193, 155, 75, 0.5);
+	}
+
+	.section_contacts {
+		height: auto;
+		min-height: 100%;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0;
+		background-image: linear-gradient(rgba(216, 200, 165, 0.8), rgba(216, 200, 165, 0.8)), url(./img/cover/cover_2000.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
+		background-attachment: fixed;
+	}
+
+	.group_contact {
+		margin: 10% 5% 10% 5%;
+		padding: 5%;
+		display: flex;
+		justify-content: start;
+		align-items: start;
+		flex-direction: column;
+		flex-wrap: wrap;
+		background-color: var(--global-background-color);
+		border-radius: 30px;
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+		min-width: 330px;
+		min-height: 380px;
+		width: 10%;
+		height: 20%;
+
+	}
+
+	.social_networks_icons {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		width: 330px;
+	}
+
+	.social_networks_icons a,
+	.social_networks_icons:hover,
+	.social_networks_icons:focus,
+	.social_networks_icons:active {
+		text-decoration: none;
+		box-shadow: none;
+	}
+
+	.social_networks_icons_container {
+		margin: 10px 0;
+		text-decoration: none;
+		font-family: 'Work Sans';
+		font-size: 16px;
+		color: black;
+		width: 330px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.social_networks_icons_container img {
+		width: 36px;
+		height: 36px;
+		margin-right: 10px;
+	}
+
+	.form_title_container {
+		font-family: 'Inter';
+		font-size: 24px;
+		color: black;
+		display: flex;
+	}
+
+	.form_title {
+		margin-left: 5px;
+	}
+
+	.form_send_message {
+		display: flex;
+		justify-content: start;
+		align-items: start;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		margin-top: 20px;
+	}
+
+	input[type=email] {
+		width: 320px;
+		height: 40px;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 1px solid var(--global-focus-color);
+		border-radius: 4px;
+		outline: none;
+		font-family: 'Work Sans';
+		font-size: 16px;
+		color: #42413D;
+	}
+
+	input[type=email]:focus {
+		border: 1px solid var(--global-diamond-icon-color);
+	}
+
+	button[type=submit] {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 140px;
+		height: 40px;
+		margin-top: 2%;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border-radius: 4px;
+		background-color: var(--global-focus-color);
+		color: white;
+		font-family: 'Inter';
+		font-size: 18px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+
+	button[type=submit]:hover,
+	button[type=submit]:focus,
+	button[type=submit]:active {
+		color: white;
+		background-color: var(--global-diamond-icon-color);
+		border: none;
+		outline: none;
+		transform: scale(1.05);
+		box-shadow: 0 0 10px rgba(193, 155, 75, 0.5);
+	}
+
+	textarea {
+		width: 320px;
+		height: 200px;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 1px solid var(--global-focus-color);
+		border-radius: 4px;
+		resize: none;
+		outline: none;
+		font-family: 'Work Sans';
+		font-size: 16px;
+		color: #42413D;
+	}
+
+	textarea:focus {
+		border: 1px solid var(--global-diamond-icon-color);
+	}
+
+	footer {
+		background-color: var(--global-focus-color);
+		min-height: 200px;
+		height: auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Work Sans';
+		font-size: 20px;
+		color: antiquewhite;
+		row-gap: 25px;
+	}
+
+	.footer_content {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Work Sans';
+		font-size: 16px;
+		color: antiquewhite;
+		min-height: 280px;
+		height: auto;
+		width: 100%;
+	}
+
+	.footer_copyright_image img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.footer_copyright {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-align: left;
+		width: 450px;
+		height: 150px;
+		padding-top: 20px;
+	}
+
+	.footer_copyright_text {
+		width: 250px;
+		height: 150px;
+		text-align: left;
+	}
+
+	.footer_copyright_title {
+		font-size: 20px;
+	}
+
+	.footer_final_message {
+		margin: 20px 0 30px 0;
+		text-align: center;
+	}
+
+	.group_cards {
+		width: 80%;
+		padding: 10% 0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
 
 	/* The Modal (background) */
 	.modal {
@@ -570,7 +846,17 @@
 
 	.press_video {
 		margin-bottom: 8vh;
+		img {
+			width: 650px;
+			height: 367px;	
+		}
 	}
+
+	.press_video_viewer {
+		width: 650px;
+		height: 367px;	
+	}
+
 
 	.press_options {
 		display: flex;
@@ -587,6 +873,11 @@
 		background-color: var(--global-background-color);
 		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 		cursor: pointer;
+	}
+
+	.press_option_img {
+		width: 140px;
+		height: 140px;
 	}
 
 	.press_option:hover,
@@ -637,6 +928,7 @@
 		flex-direction: column;
 		flex-wrap: nowrap;
 		width: 360px;
+		margin-left: -20px;
 	}
 
 	.social_networks_icons a,
